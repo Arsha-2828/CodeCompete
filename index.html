@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodeCompete</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">CodeCompete</div>
+      <nav>
+        <a href="#">Problems</a>
+        <a href="#">Leaderboard</a>
+        <a href="#">Dashboard</a>
+        <a href="#">About</a>
+      </nav>
+      <button class="login-btn">Login</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="content">
+      <h1>Master Coding Through Competition</h1>
+      <p>
+        Join thousands of developers in thrilling coding competitions.<br/>
+        Sharpen your skills, climb the leaderboard, and win prizes!
+      </p>
+      <div class="buttons">
+        <button class="join">Join Now</button>
+        <button class="watch">Watch Demo</button><br><br><br>
+        
+    <p id="next">Next Competition Soon:</p>
+    <div id="countdown"></div>
+    <button class="register">Register Now</button>
+      </div>
+    </div>
+    <div class="image-box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWtu3dFjwc_2dyVnkfMXUXTTILU-HphbAM1g&s" alt="Coding Class" />
+      <div class="live-timer">LIVE: Contest ends in <span id="live-timer">4:32:10</span></div>
+    </div>
+  </section>
+    
+
+ <!-- Featured Problems Section -->
+  <section class="featured-section">
+    <h2>Featured Coding Problems</h2>
+    <div class="problem-cards">
+
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="tags">
+          <span class="tag easy">Easy</span>
+          <span class="tag">Arrays</span>
+        </div>
+        <h3>Two Sum</h3>
+        <p>Given an array of integers and a target value, find two numbers such that they add up to the target.</p>
+        <div class="card-footer">
+          <span>⭐ 4.5</span>
+          <span>👥 1200 solved</span>
+          <a href="#">Solve Challenge</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="tags">
+          <span class="tag medium">Medium</span>
+          <span class="tag">Graph</span>
+        </div>
+        <h3>Course Schedule</h3>
+        <p>Determine if a course schedule is possible given prerequisite constraints represented as a graph.</p>
+        <div class="card-footer">
+          <span>⭐ 4.2</span>
+          <span>👥 780 solved</span>
+          <a href="#">Solve Challenge</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="tags">
+          <span class="tag hard">Hard</span>
+          <span class="tag">DP</span>
+        </div>
+        <h3>Regular Expression Matching</h3>
+        <p>Implement regular expression matching with support for '.' and '*' characters.</p>
+        <div class="card-footer">
+          <span>⭐ 3.9</span>
+          <span>👥 420 solved</span>
+          <a href="#">Solve Challenge</a>
+        </div>
+      </div>
+    </div>
+    <div class="center-btn">
+      <button class="view-all">View All Problems</button>
+    </div>
+  </section>
+
+
+  
+  
+  </section>
+  <section class="leaderboard-section">
+  <h2>Current Competition Rankings</h2>
+
+  <div class="leaderboard-table">
+    <table>
+      <thead>
+        <tr>
+          <th>RANK</th>
+          <th>USER</th>
+          <th>SCORE</th>
+          <th>PROBLEMS SOLVED</th>
+          <th>LAST SOLVED</th>
+          <th>COUNTRY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="gold">
+          <td>1</td>
+          <td>
+            <div class="user-info">
+              <!-- <img src="https://via.placeholder.com/30" alt="User" /> -->
+              <div>
+                <strong>CodeMaster99</strong><br><span>@codemaster</span>
+              </div>
+            </div>
+          </td>
+          <td class="score">9850</td>
+          <td>217</td>
+          <td>2 minutes ago</td>
+          <td> USA</td>
+        </tr>
+
+        <tr class="silver">
+          <td>2</td>
+          <td>
+            <div class="user-info">
+              <!-- <img src="https://via.placeholder.com/30" alt="User" /> -->
+              <div>
+                <strong>BinaryNinja</strong><br><span>@b_ninja</span>
+              </div>
+            </div>
+          </td>
+          <td class="score">9620</td>
+          <td>198</td>
+          <td>15 minutes ago</td>
+          <td>India</td>
+        </tr>
+
+        <tr class="bronze">
+          <td>3</td>
+          <td>
+            <div class="user-info">
+              <!-- <img src="https://via.placeholder.com/30" alt="User" /> -->
+              <div>
+                <strong>AlgoQueen</strong><br><span>@queen_of_code</span>
+              </div>
+            </div>
+          </td>
+          <td class="score">9415</td>
+          <td>187</td>
+          <td>1 hour ago</td>
+          <td> Canada</td>
+        </tr>
+
+        <tr class="your-rank">
+          <td>15</td>
+          <td>
+            <div class="user-info">
+              <!-- <img src="https://via.placeholder.com/30" alt="User" /> -->
+              <div>
+                <strong>You</strong><br><span>@new_coder</span>
+              </div>
+            </div>
+          </td>
+          <td class="score">3240</td>
+          <td>42</td>
+          <td>2 days ago</td>
+          <td> India</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="leaderboard-link">
+      <a href="#">View Full Leaderboard</a>
+    </div>
+  </div>
+</section>
+<section class="dashboard-section">
+  <h2>Your Dashboard</h2>
+
+  <div class="dashboard-container">
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <!-- <img src="https://via.placeholder.com/80" alt="User" class="avatar" /> -->
+      <h3>John Doe</h3>
+      <p class="username">@new_coder</p>
+      <div class="badges">
+        <span class="badge level">Level 7</span>
+        <span class="badge win">1st Place ×3</span>
+      </div>
+
+      <div class="stats">
+        <div><strong>42</strong><br>Problems Solved</div>
+        <div><strong>85%</strong><br>Accuracy</div>
+        <div><strong>#15</strong><br>Global Rank</div>
+        <div><strong>3.8</strong><br>Avg. Rating</div>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress" style="width: 68%;"></div>
+      </div>
+      <p class="progress-info">68% to next level (250 XP needed)</p>
+
+      <a href="#" class="edit-profile">Edit Profile</a>
+    </div>
+
+    <!-- Graph Section -->
+    <div class="graph-section">
+      <div class="graph-header">
+        <h4>Your Progress</h4>
+        <select>
+          <option>All Time</option>
+          <option>Last 30 Days</option>
+          <option>Last 7 Days</option>
+        </select>
+      </div>
+      <div class="graph-placeholder">
+        <img src="https://t4.ftcdn.net/jpg/11/51/34/47/360_F_1151344716_bgsBFueMJnNuD25Fo9lbSwYkCdSDzSuc.jpg" alt="Progress Graph"/>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="scoring-section">
+    <h1> Our scoring system</h1>
+  <div class="scoring-container">
+    <!-- Left: Scoring Explanation -->
+    <div class="scoring-left">
+      <h3>How Scoring Works</h3>
+      <p>
+        Our scoring system evaluates your submissions based on multiple factors to ensure fair and comprehensive assessment of your coding skills.
+      </p>
+
+      <ul class="scoring-points">
+        <li>
+          <span class="icon correct">✔</span>
+          <div>
+            <strong>Correctness (50%)</strong>
+            <p>Solutions must pass all test cases, including edge cases and performance constraints.</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon efficient">⏱</span>
+          <div>
+            <strong>Efficiency (30%)</strong>
+            <p>Optimal time and space complexity solutions earn more points than brute force approaches.</p>
+          </div>
+        </li>
+        <li>
+          <span class="icon quality">💻</span>
+          <div>
+            <strong>Code Quality (20%)</strong>
+            <p>Readable, well-structured code with proper variable naming and comments.</p>
+          </div>
+        </li>
+      </ul>
+
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <!-- Right: Chart & Breakdown -->
+    <div class="scoring-right">
+      <h4>Competition Points Distribution</h4>
+      <div class="chart-box">
+        <img src="https://r-graph-gallery.com/piechart-ggplot2_files/figure-html/thecode3-1.png" alt="Pie Chart">
+      </div>
+      <div class="points-legend">
+        <div><span class="legend blue"></span> Easy Problems <strong>100–200 pts</strong></div>
+        <div><span class="legend orange"></span> Medium Problems <strong>201–400 pts</strong></div>
+        <div><span class="legend red"></span> Hard Problems <strong>401–700 pts</strong></div>
+        <div><span class="legend purple"></span> Time Bonus <strong>Up to 25%</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Left Column -->
+    <div class="footer-column">
+      <h3 class="logo">⚙ <span>CodeCompete</span></h3>
+      <p>The premier platform for competitive programming and skill development.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Middle Columns -->
+    <div class="footer-column">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="#">Problems</a></li>
+        <li><a href="#">Leaderboard</a></li>
+        <li><a href="#">Competitions</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+
+    <!-- Right Column -->
+    <div class="footer-column">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2023 CodeCompete. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Cookie Policy</a>
+      <a href="#">GDPR</a>
+    </div>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
